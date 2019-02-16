@@ -1,9 +1,7 @@
 package br.com.andreyneto.movilenextday3
 
-import android.database.DatabaseUtils
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.databinding.DataBindingUtil
+import androidx.appcompat.app.AppCompatActivity
 import br.com.andreyneto.movilenextday3.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_main)
-        val game = Game("portal 2")
+        val game = Game("portal 2", 200, "")
         binding.game = game
     }
 }
