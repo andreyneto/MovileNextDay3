@@ -4,6 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
+        <import type="android.view.View"/>
         <variable name="game" type="br.com.andreyneto.movilenextday3.Game"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
