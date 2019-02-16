@@ -1,5 +1,6 @@
 package br.com.andreyneto.movilenextday3
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.andreyneto.movilenextday3.databinding.ActivityMainBinding
@@ -20,5 +21,11 @@ class MainActivity : AppCompatActivity() {
         tvRating.setOnClickListener {
             game.rating += 1
         }
+
+        fabAdd.setOnClickListener {
+            val intent = Intent(this, GameAddActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
